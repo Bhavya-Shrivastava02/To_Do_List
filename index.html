@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>To Do List</title>
+</head>
+<body>
+    <div class="top">
+         <p><b>GYIZER </b><br><small>TODO APP</small></p>
+    </div>
+
+  <div class="input-container">
+    <!-- <input type="text" id="titleInput" placeholder="Title...">
+    <input type="text" id="descriptionInput" placeholder="Input..."> -->
+    <div class="left">
+      <div class="row">
+        <input type="text" id="titleInput" placeholder="Title...">
+      </div>
+      <div class="row">
+        <input type="text" id="descriptionInput" placeholder="Input...">
+      </div>
+    </div>
+    <div class="button">
+      <button id="addButton" class="btn" onclick="addTask()"><i class="fa-solid fa-plus"></i></button>
+      <button id="updateButton" onclick="updateTask()" style="display: none; background: #1B1A17; color:white;  border: 2px solid #a35709; height: 93px;">Update</button>
+  </div>
+  </div>
+   <div id="taskList">
+     <div class="no-task" id="noTaskMessage">
+     <hr align="center" width="3%" color=#a35709>
+     <!-- <center >No tasks</center> -->
+     <p style="text-align:center; top: auto;">No tasks</p>
+     <hr align="center" width="3%"color=#a35709>
+</div></div>
+
+</body>
+</html>
